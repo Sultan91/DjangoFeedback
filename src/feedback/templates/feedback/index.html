@@ -1,0 +1,5 @@
+ <ul>
+     {% for f in all_feedbacks %}
+     <li><a href="/feedback/{{f.id}}/"> {{ f.title}}</a></li>
+    {% endfor %}
+ </ul>

@@ -1,0 +1,12 @@
+ <ul>
+    {{ feedback.title}} <br>
+    {{ feedback.description}}
+
+     <h4>List of questions:</h4>
+     <ul>
+         {% for q in feedback.question_set.all %}
+            <li> ({{q.question_type}}), {{q.question}} </li>
+         {% endfor %}
+
+     </ul>
+ </ul>
